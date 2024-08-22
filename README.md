@@ -1,4 +1,4 @@
-# Stockmarket [Link Text](https://stockmarket-analysis.streamlit.app/)
+# Stockmarket [Stock Market Analysis](https://stockmarket-analysis.streamlit.app/)
 - Streamlit App made to give insights on a chosen stock . 
 - Give a plot for the closing price at the chosen time period
 ### Popular Stocks
