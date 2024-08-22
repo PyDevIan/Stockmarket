@@ -53,6 +53,7 @@ defusedxml==0.7.1
 diff-match-patch==20230430
 dill==0.3.8
 distlib==0.3.6
+distutils
 distro==1.9.0
 docstring-to-markdown==0.15
 docutils==0.21.2
