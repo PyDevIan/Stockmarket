@@ -12,6 +12,7 @@ def get_stock_data(ticker, start_date, end_date):
 
 # Main function for the Streamlit app
 
+
 def get_current_stock_price(ticker):
     """
     Fetches the current price of the specified stock.
@@ -23,12 +24,13 @@ def get_current_stock_price(ticker):
     float: The current price of the stock.
     """
     ticker_data = yf.Ticker(ticker)
-    current_price = ticker_data.history(period='1d')['Close'][0]
+    current_price = ticker_data.history(period='1d', interval='1m')['Close'][0]
     return current_price
+
 
 def main():
     st.title('Interactive Financial Market Analysis')
-    
+
     # Sidebar for user inputs
     st.sidebar.header('User Input Options')
     # Default to Apple Inc.
@@ -72,4 +74,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
