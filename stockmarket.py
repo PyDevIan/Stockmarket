@@ -42,8 +42,9 @@ def main():
     # Validate the date range
     if start_date < end_date:
         current_price = get_current_stock_price(selected_stock)
-        st.subheader(
-            f"The last closing price of {selected_stock.upper()} is: ${current_price:.2f}")
+        st.markdown(
+            f'<h3>The current price of {selected_stock.upper()} is: <span style="color:green;">${current_price:.2f}</span></h3>',
+            unsafe_allow_html=True)
         stock_data = get_stock_data(selected_stock, start_date, end_date)
         st.write(f"Displaying data for: {selected_stock}")
         st.write(stock_data)
